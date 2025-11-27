@@ -10,3 +10,15 @@
 #
 # 
 # Write your code here:
+def handle_command(cmd):
+    match cmd:
+        case "start":
+            print("Starting...")
+        case "stop":
+            print("Stopping...")
+        case "save":
+            print("Saving...")
+        case _:
+            print("Unknown command")
+comand = input("Enter command: ")
+handle_command(comand)
